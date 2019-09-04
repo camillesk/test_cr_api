@@ -1,5 +1,5 @@
 class Medicine < ApplicationRecord
   def total
-    value * quantity
+    value.to_f * quantity
   end
 end
